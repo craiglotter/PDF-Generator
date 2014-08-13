@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" version="1.9" modules="professional" RootPath=".">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="CTRLS" Value="3"/>
+    <ROW Property="ProductCode" Value="{12699690-6D19-4096-8527-966F86B3156E}"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPPRODUCTICON" Value="controlPanelIcon.exe"/>
+    <ROW Property="BannerBitmap" Value="installer_background.jpg"/>
+    <ROW Property="DialogBitmap" Value="installer_background_dialog.jpg"/>
+    <ROW Property="Manufacturer" Value="CodeUnit"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{60DD3558-4127-4582-9AC9-A272ABC95AFD}"/>
+    <ROW Property="ProductName" Value="PDF Generator"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="PDF_Generator_XLS2PDF_DIR" Directory_Parent="TARGETDIR" DefaultDir="PDFGen~3|PDF Generator XLS2PDF"/>
+    <ROW Directory="vti_cnf_2_DIR" Directory_Parent="Output_DIR" DefaultDir="_vti_cnf"/>
+    <ROW Directory="Inputs_1_DIR" Directory_Parent="PDF_Generator_DOC2PDF_DIR" DefaultDir="Inputs"/>
+    <ROW Directory="Inputs_DIR" Directory_Parent="TARGETDIR" DefaultDir="Inputs"/>
+    <ROW Directory="Website_DIR" Directory_Parent="TARGETDIR" DefaultDir="Website"/>
+    <ROW Directory="vti_cnf_3_DIR" Directory_Parent="PDF_Generator_DIR" DefaultDir="_vti_cnf"/>
+    <ROW Directory="Input_DIR" Directory_Parent="PDF_Generator_DIR" DefaultDir="Input"/>
+    <ROW Directory="Inputs_2_DIR" Directory_Parent="PDF_Generator_PPT2PDF_DIR" DefaultDir="Inputs"/>
+    <ROW Directory="PDF_Generator_DIR" Directory_Parent="Website_DIR" DefaultDir="PDFGen~1|PDF Generator"/>
+    <ROW Directory="PDF_Generator_IMG2PDF_DIR" Directory_Parent="TARGETDIR" DefaultDir="PDFGen~4|PDF Generator IMG2PDF"/>
+    <ROW Directory="TARGETDIR" Directory_Parent="" DefaultDir="SourceDir"/>
+    <ROW Directory="Inputs_3_DIR" Directory_Parent="PDF_Generator_XLS2PDF_DIR" DefaultDir="Inputs"/>
+    <ROW Directory="Installers_DIR" Directory_Parent="TARGETDIR" DefaultDir="Instal~1|Installers"/>
+    <ROW Directory="Output_DIR" Directory_Parent="PDF_Generator_DIR" DefaultDir="Output"/>
+    <ROW Directory="PDF_Generator_DOC2PDF_DIR" Directory_Parent="TARGETDIR" DefaultDir="PDFGen~1|PDF Generator DOC2PDF"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="vti_cnf_1_DIR" Directory_Parent="Input_DIR" DefaultDir="_vti_cnf"/>
+    <ROW Directory="vti_cnf_DIR" Directory_Parent="images_DIR" DefaultDir="_vti_cnf"/>
+    <ROW Directory="Images_DIR" Directory_Parent="TARGETDIR" DefaultDir="Images"/>
+    <ROW Directory="Inputs_4_DIR" Directory_Parent="PDF_Generator_IMG2PDF_DIR" DefaultDir="Inputs"/>
+    <ROW Directory="images_DIR" Directory_Parent="PDF_Generator_DIR" DefaultDir="images"/>
+    <ROW Directory="PDF_Generator_PPT2PDF_DIR" Directory_Parent="TARGETDIR" DefaultDir="PDFGen~2|PDF Generator PPT2PDF"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="PDF_Generator.exe" ComponentId="{F4C7F180-E495-4CFF-A047-B0AA63EA4DCF}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="PDF_Generator.exe" FullKeyPath="TARGETDIR\PDF Generator.exe"/>
+    <ROW Component="Inputs.txt" ComponentId="{960DBD16-0A40-4A2F-B0D2-9B7DE0082579}" Directory_="Inputs_DIR" Attributes="0" Condition="" KeyPath="Inputs.txt" FullKeyPath="TARGETDIR\Inputs"/>
+    <ROW Component="Inputs.txt_1" ComponentId="{3AE627D0-DBE9-4AE5-A687-5378764C9B11}" Directory_="Inputs_1_DIR" Attributes="0" Condition="" KeyPath="Inputs.txt_1" FullKeyPath="TARGETDIR\PDF Generator DOC2PDF\Inputs"/>
+    <ROW Component="Interop.ACRODISTXLib.dll" ComponentId="{21AFD434-95B4-4371-B166-FA0289676FFB}" Directory_="PDF_Generator_DOC2PDF_DIR" Attributes="0" Condition="" KeyPath="Interop.ACRODISTXLib.dll" FullKeyPath="TARGETDIR\PDF Generator DOC2PDF\Interop.ACRODISTXLib.dll"/>
+    <ROW Component="Interop.ACRODISTXLib.dll_1" ComponentId="{BD81230B-1F4F-4676-B021-6213D58DA77E}" Directory_="PDF_Generator_PPT2PDF_DIR" Attributes="0" Condition="" KeyPath="Interop.ACRODISTXLib.dll_1" FullKeyPath="TARGETDIR\PDF Generator PPT2PDF\Interop.ACRODISTXLib.dll"/>
+    <ROW Component="PDF_Generator_DOC2PDF.exe" ComponentId="{F2111A7F-3768-450A-8911-4D738E1770B2}" Directory_="PDF_Generator_DOC2PDF_DIR" Attributes="0" Condition="" KeyPath="PDF_Generator_DOC2PDF.exe" FullKeyPath="TARGETDIR\PDF Generator DOC2PDF\PDF Generator DOC2PDF.exe"/>
+    <ROW Component="Inputs.txt_2" ComponentId="{CE8877C8-C22A-4170-8292-8062158B8866}" Directory_="Inputs_2_DIR" Attributes="0" Condition="" KeyPath="Inputs.txt_2" FullKeyPath="TARGETDIR\PDF Generator PPT2PDF\Inputs"/>
+    <ROW Component="Interop.ACRODISTXLib.dll_2" ComponentId="{765D4B1A-FD61-4836-9985-98F8067C5488}" Directory_="PDF_Generator_XLS2PDF_DIR" Attributes="0" Condition="" KeyPath="Interop.ACRODISTXLib.dll_2" FullKeyPath="TARGETDIR\PDF Generator XLS2PDF\Interop.ACRODISTXLib.dll"/>
+    <ROW Component="PDF_Generator_XLS2PDF.exe" ComponentId="{9D16DC75-0449-4508-AF2B-067B41112E80}" Directory_="PDF_Generator_XLS2PDF_DIR" Attributes="0" Condition="" KeyPath="PDF_Generator_XLS2PDF.exe" FullKeyPath="TARGETDIR\PDF Generator XLS2PDF\PDF Generator XLS2PDF.exe"/>
+    <ROW Component="Inputs.txt_3" ComponentId="{3D07B46E-D894-438E-A191-3D995896AD22}" Directory_="Inputs_3_DIR" Attributes="0" Condition="" KeyPath="Inputs.txt_3" FullKeyPath="TARGETDIR\PDF Generator XLS2PDF\Inputs"/>
+    <ROW Component="Interop.ACRODISTXLib.dll_3" ComponentId="{1626DC09-0435-4EA3-9546-230CA60AF27F}" Directory_="PDF_Generator_IMG2PDF_DIR" Attributes="0" Condition="" KeyPath="Interop.ACRODISTXLib.dll_3" FullKeyPath="TARGETDIR\PDF Generator IMG2PDF\Interop.ACRODISTXLib.dll"/>
+    <ROW Component="Microsoft.Office.Interop.Word.dll" ComponentId="{EE870CD2-EEC7-4F9C-8583-2165FE4A7AAC}" Directory_="PDF_Generator_DOC2PDF_DIR" Attributes="0" Condition="" KeyPath="Microsoft.Office.Interop.Word.dll" FullKeyPath="TARGETDIR\PDF Generator DOC2PDF\Microsoft.Office.Interop.Word.dll"/>
+    <ROW Component="Microsoft.Office.Interop.Word.dll_1" ComponentId="{84BB6809-2CD4-46C3-ACBC-FB608C76A995}" Directory_="PDF_Generator_IMG2PDF_DIR" Attributes="0" Condition="" KeyPath="Microsoft.Office.Interop.Word.dll_1" FullKeyPath="TARGETDIR\PDF Generator IMG2PDF\Microsoft.Office.Interop.Word.dll"/>
+    <ROW Component="Inputs.txt_4" ComponentId="{C6730044-EF74-4165-A839-F4764EB28E25}" Directory_="Inputs_4_DIR" Attributes="0" Condition="" KeyPath="Inputs.txt_4" FullKeyPath="TARGETDIR\PDF Generator IMG2PDF\Inputs"/>
+    <ROW Component="AutoUpdate.exe_3" ComponentId="{CB674CAE-A530-4CB4-87E7-41D3D31E6B88}" Directory_="PDF_Generator_XLS2PDF_DIR" Attributes="0" Condition="" KeyPath="AutoUpdate.exe_3" FullKeyPath="TARGETDIR\PDF Generator XLS2PDF\AutoUpdate.exe"/>
+    <ROW Component="Microsoft.Office.Interop.PowerPoint.dll" ComponentId="{FE969A88-94B4-459B-9B1D-13B5F8B68849}" Directory_="PDF_Generator_PPT2PDF_DIR" Attributes="0" Condition="" KeyPath="Microsoft.Office.Interop.PowerPoint.dll" FullKeyPath="TARGETDIR\PDF Generator PPT2PDF\Microsoft.Office.Interop.PowerPoint.dll"/>
+    <ROW Component="Office.dll" ComponentId="{13C34270-2585-499D-9214-B47E48B2ABED}" Directory_="PDF_Generator_DOC2PDF_DIR" Attributes="0" Condition="" KeyPath="Office.dll" FullKeyPath="TARGETDIR\PDF Generator DOC2PDF\Office.dll"/>
+    <ROW Component="Office.dll_1" ComponentId="{6BDE0567-2C4C-485B-BA2C-746E96C5C7B7}" Directory_="PDF_Generator_PPT2PDF_DIR" Attributes="0" Condition="" KeyPath="Office.dll_1" FullKeyPath="TARGETDIR\PDF Generator PPT2PDF\Office.dll"/>
+    <ROW Component="index.php" ComponentId="{6C433502-08CA-4FE0-9F1C-88E1B2E16D22}" Directory_="PDF_Generator_DIR" Attributes="0" Condition="" KeyPath="index.php" FullKeyPath="TARGETDIR\Website\PDF Generator"/>
+    <ROW Component="index.php_1" ComponentId="{44CF87EF-F68B-4DB6-AF56-37EF00A6B1FB}" Directory_="vti_cnf_3_DIR" Attributes="0" Condition="" KeyPath="index.php_1" FullKeyPath="TARGETDIR\Website\PDF Generator\_vti_cnf"/>
+    <ROW Component="za.exe_4" ComponentId="{18FC13AC-49E5-4806-8E03-C494D700AA06}" Directory_="PDF_Generator_IMG2PDF_DIR" Attributes="0" Condition="" KeyPath="za.exe_4" FullKeyPath="TARGETDIR\PDF Generator IMG2PDF\7za.exe"/>
+    <ROW Component="AutoUpdate.exe_4" ComponentId="{0A199D59-DB62-4F01-A8C7-B16B4E0E8ACE}" Directory_="PDF_Generator_IMG2PDF_DIR" Attributes="0" Condition="" KeyPath="AutoUpdate.exe_4" FullKeyPath="TARGETDIR\PDF Generator IMG2PDF\AutoUpdate.exe"/>
+    <ROW Component="Banner_Image.jpg" ComponentId="{0F0B85BE-5FB7-4809-9C5B-39B70BC3710B}" Directory_="images_DIR" Attributes="0" Condition="" KeyPath="Banner_Image.jpg" FullKeyPath="TARGETDIR\Website\PDF Generator\images"/>
+    <ROW Component="Banner_Image.jpg_1" ComponentId="{EF8373C4-8309-4B74-9D23-0732E7E12EB3}" Directory_="vti_cnf_DIR" Attributes="0" Condition="" KeyPath="Banner_Image.jpg_1" FullKeyPath="TARGETDIR\Website\PDF Generator\images\_vti_cnf"/>
+    <ROW Component="Office.dll_2" ComponentId="{C5D443F7-BAB7-4A15-B630-D62E30EB7610}" Directory_="PDF_Generator_XLS2PDF_DIR" Attributes="0" Condition="" KeyPath="Office.dll_2" FullKeyPath="TARGETDIR\PDF Generator XLS2PDF\Office.dll"/>
+    <ROW Component="PDF_Generator_PPT2PDF.exe" ComponentId="{AA970ECB-8A2B-4E6E-9194-AADE00673135}" Directory_="PDF_Generator_PPT2PDF_DIR" Attributes="0" Condition="" KeyPath="PDF_Generator_PPT2PDF.exe" FullKeyPath="TARGETDIR\PDF Generator PPT2PDF\PDF Generator PPT2PDF.exe"/>
+    <ROW Component="Microsoft.Office.Interop.Excel.dll" ComponentId="{F2501FCB-2B13-440A-9016-7460E92C00DF}" Directory_="PDF_Generator_XLS2PDF_DIR" Attributes="0" Condition="" KeyPath="Microsoft.Office.Interop.Excel.dll" FullKeyPath="TARGETDIR\PDF Generator XLS2PDF\Microsoft.Office.Interop.Excel.dll"/>
+    <ROW Component="Office.dll_3" ComponentId="{B68713A4-EF8D-4AEF-9E3A-22938DCF5ECC}" Directory_="PDF_Generator_IMG2PDF_DIR" Attributes="0" Condition="" KeyPath="Office.dll_3" FullKeyPath="TARGETDIR\PDF Generator IMG2PDF\Office.dll"/>
+    <ROW Component="PDF_Generator_IMG2PDF.exe" ComponentId="{62A688F3-D657-4FC6-A7F2-D0487B31161D}" Directory_="PDF_Generator_IMG2PDF_DIR" Attributes="0" Condition="" KeyPath="PDF_Generator_IMG2PDF.exe" FullKeyPath="TARGETDIR\PDF Generator IMG2PDF\PDF Generator IMG2PDF.exe"/>
+    <ROW Component="Monitoring_Animation.gif" ComponentId="{95B64F54-234A-4B75-9A28-24E5EFE7FEBA}" Directory_="Images_DIR" Attributes="0" Condition="" KeyPath="Monitoring_Animation.gif" FullKeyPath="TARGETDIR\Images"/>
+    <ROW Component="Application_Loader.exe" ComponentId="{A01C0D33-4DB0-42E8-A6F2-A2956AD0669F}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Application_Loader.exe" FullKeyPath="TARGETDIR\Application_Loader.exe"/>
+    <ROW Component="Application_Loader.exe_1" ComponentId="{6382542C-476D-4F77-BF00-61E9E45DD560}" Directory_="PDF_Generator_DOC2PDF_DIR" Attributes="0" Condition="" KeyPath="Application_Loader.exe_1" FullKeyPath="TARGETDIR\PDF Generator DOC2PDF\Application_Loader.exe"/>
+    <ROW Component="Microsoft.Vbe.Interop.dll" ComponentId="{EE904A15-6A81-4277-B4EE-E2522569C034}" Directory_="PDF_Generator_DOC2PDF_DIR" Attributes="0" Condition="" KeyPath="Microsoft.Vbe.Interop.dll" FullKeyPath="TARGETDIR\PDF Generator DOC2PDF\Microsoft.Vbe.Interop.dll"/>
+    <ROW Component="Microsoft.Vbe.Interop.dll_1" ComponentId="{B5E96A37-5970-447B-8682-E11F1A1E2B89}" Directory_="PDF_Generator_PPT2PDF_DIR" Attributes="0" Condition="" KeyPath="Microsoft.Vbe.Interop.dll_1" FullKeyPath="TARGETDIR\PDF Generator PPT2PDF\Microsoft.Vbe.Interop.dll"/>
+    <ROW Component="config.aup" ComponentId="{650326BF-376C-4C52-83E9-A73C0DB7E12D}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="config.aup" FullKeyPath="TARGETDIR"/>
+    <ROW Component="config.aup_1" ComponentId="{3CD450E1-AC63-4E8D-8424-3E8EF316CF21}" Directory_="PDF_Generator_DOC2PDF_DIR" Attributes="0" Condition="" KeyPath="config.aup_1" FullKeyPath="TARGETDIR\PDF Generator DOC2PDF"/>
+    <ROW Component="Application_Loader.exe_2" ComponentId="{64541DB4-855D-4D5D-A370-258DAF3ACB96}" Directory_="PDF_Generator_PPT2PDF_DIR" Attributes="0" Condition="" KeyPath="Application_Loader.exe_2" FullKeyPath="TARGETDIR\PDF Generator PPT2PDF\Application_Loader.exe"/>
+    <ROW Component="Microsoft.Vbe.Interop.dll_2" ComponentId="{5BAB79B7-C883-427B-8D34-F4A21DAA8B0D}" Directory_="PDF_Generator_XLS2PDF_DIR" Attributes="0" Condition="" KeyPath="Microsoft.Vbe.Interop.dll_2" FullKeyPath="TARGETDIR\PDF Generator XLS2PDF\Microsoft.Vbe.Interop.dll"/>
+    <ROW Component="SaveAsPDFandXPS.exe" ComponentId="{B0A4EFE9-00DB-4C98-A036-662186D6A2F5}" Directory_="Installers_DIR" Attributes="0" Condition="" KeyPath="SaveAsPDFandXPS.exe" FullKeyPath="TARGETDIR\Installers\SaveAsPDFandXPS.exe"/>
+    <ROW Component="Testing_this_Application_out.docx" ComponentId="{7A06B3B9-989D-449F-B14B-9E132755DC58}" Directory_="Input_DIR" Attributes="0" Condition="" KeyPath="Testing_this_Application_out.docx" FullKeyPath="TARGETDIR\Website\PDF Generator\Input"/>
+    <ROW Component="Testing_this_Application_out.docx_1" ComponentId="{4A5D09F5-4D81-4378-933B-FC14D5BB4BB0}" Directory_="vti_cnf_1_DIR" Attributes="0" Condition="" KeyPath="Testing_this_Application_out.docx_1" FullKeyPath="TARGETDIR\Website\PDF Generator\Input\_vti_cnf"/>
+    <ROW Component="config.aup_2" ComponentId="{A096E69E-D855-4D1A-A07A-245CB5220452}" Directory_="PDF_Generator_PPT2PDF_DIR" Attributes="0" Condition="" KeyPath="config.aup_2" FullKeyPath="TARGETDIR\PDF Generator PPT2PDF"/>
+    <ROW Component="za.exe" ComponentId="{7E52AFFA-7690-48B4-911B-686FDEC0D678}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="za.exe" FullKeyPath="TARGETDIR\7za.exe"/>
+    <ROW Component="za.exe_1" ComponentId="{10A83A93-0C99-499C-BDA1-5B7C0FF40317}" Directory_="PDF_Generator_DOC2PDF_DIR" Attributes="0" Condition="" KeyPath="za.exe_1" FullKeyPath="TARGETDIR\PDF Generator DOC2PDF\7za.exe"/>
+    <ROW Component="Application_Loader.exe_3" ComponentId="{53AAF8AF-E432-4A8C-8F64-4713A5B98F1A}" Directory_="PDF_Generator_XLS2PDF_DIR" Attributes="0" Condition="" KeyPath="Application_Loader.exe_3" FullKeyPath="TARGETDIR\PDF Generator XLS2PDF\Application_Loader.exe"/>
+    <ROW Component="AutoUpdate.exe" ComponentId="{DBB92569-60E1-438B-A197-E012EB15F5A7}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="AutoUpdate.exe" FullKeyPath="TARGETDIR\AutoUpdate.exe"/>
+    <ROW Component="AutoUpdate.exe_1" ComponentId="{935BE87C-9A8C-403F-8C4B-066BE89C6820}" Directory_="PDF_Generator_DOC2PDF_DIR" Attributes="0" Condition="" KeyPath="AutoUpdate.exe_1" FullKeyPath="TARGETDIR\PDF Generator DOC2PDF\AutoUpdate.exe"/>
+    <ROW Component="Microsoft.Vbe.Interop.dll_3" ComponentId="{585F44CD-B09B-47ED-AFEF-E18DB517365F}" Directory_="PDF_Generator_IMG2PDF_DIR" Attributes="0" Condition="" KeyPath="Microsoft.Vbe.Interop.dll_3" FullKeyPath="TARGETDIR\PDF Generator IMG2PDF\Microsoft.Vbe.Interop.dll"/>
+    <ROW Component="Testing_this_Application_out.docx_2" ComponentId="{F12B52D6-B9E4-403E-BA5C-E8B6F9BB5107}" Directory_="Output_DIR" Attributes="0" Condition="" KeyPath="Testing_this_Application_out.docx_2" FullKeyPath="TARGETDIR\Website\PDF Generator\Output"/>
+    <ROW Component="config.aup_3" ComponentId="{617B5D0C-274F-4423-8D3D-A2C7247B80AF}" Directory_="PDF_Generator_XLS2PDF_DIR" Attributes="0" Condition="" KeyPath="config.aup_3" FullKeyPath="TARGETDIR\PDF Generator XLS2PDF"/>
+    <ROW Component="za.exe_2" ComponentId="{7753AA4D-A63F-4EA7-B481-545F646179C5}" Directory_="PDF_Generator_PPT2PDF_DIR" Attributes="0" Condition="" KeyPath="za.exe_2" FullKeyPath="TARGETDIR\PDF Generator PPT2PDF\7za.exe"/>
+    <ROW Component="Application_Loader.exe_4" ComponentId="{4C64BE4A-D836-4C8B-86FB-53A480B738FA}" Directory_="PDF_Generator_IMG2PDF_DIR" Attributes="0" Condition="" KeyPath="Application_Loader.exe_4" FullKeyPath="TARGETDIR\PDF Generator IMG2PDF\Application_Loader.exe"/>
+    <ROW Component="AutoUpdate.exe_2" ComponentId="{3E4E2275-FB77-4CFE-9DC0-CE7475FE57AA}" Directory_="PDF_Generator_PPT2PDF_DIR" Attributes="0" Condition="" KeyPath="AutoUpdate.exe_2" FullKeyPath="TARGETDIR\PDF Generator PPT2PDF\AutoUpdate.exe"/>
+    <ROW Component="Testing_this_Application_out.docx_3" ComponentId="{6F223EEC-14C2-4597-95A6-29ABF7B5B4A8}" Directory_="vti_cnf_2_DIR" Attributes="0" Condition="" KeyPath="Testing_this_Application_out.docx_3" FullKeyPath="TARGETDIR\Website\PDF Generator\Output\_vti_cnf"/>
+    <ROW Component="config.aup_4" ComponentId="{6F304848-AB3C-4D35-A460-29AE10884F4F}" Directory_="PDF_Generator_IMG2PDF_DIR" Attributes="0" Condition="" KeyPath="config.aup_4" FullKeyPath="TARGETDIR\PDF Generator IMG2PDF"/>
+    <ROW Component="za.exe_3" ComponentId="{72CB71E8-44FE-450C-A649-13C2FFF46A10}" Directory_="PDF_Generator_XLS2PDF_DIR" Attributes="0" Condition="" KeyPath="za.exe_3" FullKeyPath="TARGETDIR\PDF Generator XLS2PDF\7za.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Feature_Parent="" Title="MainFeature" Description="Description" Display="2" Level="1" Directory_="TARGETDIR" Attributes="0" Components="za.exe Application_Loader.exe AutoUpdate.exe config.aup Monitoring_Animation.gif Inputs.txt SaveAsPDFandXPS.exe za.exe_1 Application_Loader.exe_1 AutoUpdate.exe_1 config.aup_1 Inputs.txt_1 Interop.ACRODISTXLib.dll Microsoft.Office.Interop.Word.dll Microsoft.Vbe.Interop.dll Office.dll PDF_Generator_DOC2PDF.exe za.exe_2 Application_Loader.exe_2 AutoUpdate.exe_2 config.aup_2 Inputs.txt_2 Interop.ACRODISTXLib.dll_1 Microsoft.Office.Interop.PowerPoint.dll Microsoft.Vbe.Interop.dll_1 Office.dll_1 PDF_Generator_PPT2PDF.exe za.exe_3 Application_Loader.exe_3 AutoUpdate.exe_3 config.aup_3 Inputs.txt_3 Interop.ACRODISTXLib.dll_2 Microsoft.Office.Interop.Excel.dll Microsoft.Vbe.Interop.dll_2 Office.dll_2 PDF_Generator_XLS2PDF.exe PDF_Generator.exe Banner_Image.jpg Banner_Image.jpg_1 index.php Testing_this_Application_out.docx Testing_this_Application_out.docx_1 Testing_this_Application_out.docx_2 Testing_this_Application_out.docx_3 index.php_1 za.exe_4 Application_Loader.exe_4 AutoUpdate.exe_4 config.aup_4 Interop.ACRODISTXLib.dll_3 Microsoft.Office.Interop.Word.dll_1 Microsoft.Vbe.Interop.dll_3 Office.dll_3 PDF_Generator_IMG2PDF.exe Inputs.txt_4"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="MyPortals.psd" Component_="Banner_Image.jpg" FileName="MyPort~1.psd|MyPortals.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyPortals.psd" SelfReg="false"/>
+    <ROW File="config.sav_3" Component_="config.aup_3" FileName="config.sav" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\config.sav" SelfReg="false"/>
+    <ROW File="postform.php_1" Component_="index.php_1" FileName="postform.php" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\_vti_cnf\postform.php" SelfReg="false"/>
+    <ROW File="Interop.ACRODISTXLib.dll" Component_="Interop.ACRODISTXLib.dll" FileName="Intero~1.dll|Interop.ACRODISTXLib.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\Interop.ACRODISTXLib.dll" SelfReg="false"/>
+    <ROW File="config.sav_4" Component_="config.aup_4" FileName="config.sav" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\config.sav" SelfReg="false"/>
+    <ROW File="DeleteFile.jpg" Component_="Banner_Image.jpg" FileName="Delete~1.jpg|DeleteFile.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\DeleteFile.jpg" SelfReg="false"/>
+    <ROW File="Description.txt_1" Component_="config.aup_1" FileName="Descri~1.txt|Description.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\Description.txt" SelfReg="false"/>
+    <ROW File="MyEmail.gif_1" Component_="Banner_Image.jpg_1" FileName="MyEmail.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyEmail.gif" SelfReg="false"/>
+    <ROW File="MyForms.psd" Component_="Banner_Image.jpg" FileName="MyForms.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyForms.psd" SelfReg="false"/>
+    <ROW File="MyNews.jpg_1" Component_="Banner_Image.jpg_1" FileName="MyNews.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyNews.jpg" SelfReg="false"/>
+    <ROW File="Description.txt_2" Component_="config.aup_2" FileName="Descri~1.txt|Description.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\Description.txt" SelfReg="false"/>
+    <ROW File="Description.txt_3" Component_="config.aup_3" FileName="Descri~1.txt|Description.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\Description.txt" SelfReg="false"/>
+    <ROW File="Monitoring_Still.htm" Component_="Monitoring_Animation.gif" FileName="Monito~2.htm|Monitoring-Still.htm" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Images\Monitoring-Still.htm" SelfReg="false"/>
+    <ROW File="Description.txt_4" Component_="config.aup_4" FileName="Descri~1.txt|Description.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\Description.txt" SelfReg="false"/>
+    <ROW File="PDFGenerator.psd_1" Component_="Banner_Image.jpg_1" FileName="PDFGen~1.psd|PDFGenerator.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\PDFGenerator.psd" SelfReg="false"/>
+    <ROW File="StudentLife.jpg_1" Component_="Banner_Image.jpg_1" FileName="Studen~1.jpg|StudentLife.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\StudentLife.jpg" SelfReg="false"/>
+    <ROW File="Banner_Image.jpg" Component_="Banner_Image.jpg" FileName="Banner~1.jpg|Banner_Image.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\Banner_Image.jpg" SelfReg="false"/>
+    <ROW File="Help.txt_1" Component_="config.aup_1" FileName="Help.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\Help.txt" SelfReg="false"/>
+    <ROW File="MyHandin.jpg" Component_="Banner_Image.jpg" FileName="MyHandin.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyHandin.jpg" SelfReg="false"/>
+    <ROW File="Help.txt_2" Component_="config.aup_2" FileName="Help.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\Help.txt" SelfReg="false"/>
+    <ROW File="MyCalendars.psd" Component_="Banner_Image.jpg" FileName="MyCale~1.psd|MyCalendars.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyCalendars.psd" SelfReg="false"/>
+    <ROW File="MyFiles.jpg" Component_="Banner_Image.jpg" FileName="MyFiles.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyFiles.jpg" SelfReg="false"/>
+    <ROW File="MyTidbits.jpg" Component_="Banner_Image.jpg" FileName="MyTidb~1.jpg|MyTidbits.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyTidbits.jpg" SelfReg="false"/>
+    <ROW File="Help.txt_3" Component_="config.aup_3" FileName="Help.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\Help.txt" SelfReg="false"/>
+    <ROW File="Monitoring_Animation.gif" Component_="Monitoring_Animation.gif" FileName="Monito~1.gif|Monitoring-Animation.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Images\Monitoring-Animation.gif" SelfReg="false"/>
+    <ROW File="MyCourses.jpg_1" Component_="Banner_Image.jpg_1" FileName="MyCour~1.jpg|MyCourses.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyCourses.jpg" SelfReg="false"/>
+    <ROW File="Application_Loader.exe_1" Component_="Application_Loader.exe_1" FileName="Applic~1.exe|Application_Loader.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\Application_Loader.exe" SelfReg="false"/>
+    <ROW File="Help.txt_4" Component_="config.aup_4" FileName="Help.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\Help.txt" SelfReg="false"/>
+    <ROW File="Microsoft.Vbe.Interop.dll_1" Component_="Microsoft.Vbe.Interop.dll_1" FileName="Micros~2.dll|Microsoft.Vbe.Interop.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\Microsoft.Vbe.Interop.dll" SelfReg="false"/>
+    <ROW File="config.aup" Component_="config.aup" FileName="config.aup" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\config.aup" SelfReg="false"/>
+    <ROW File="Application_Loader.exe_2" Component_="Application_Loader.exe_2" FileName="Applic~1.exe|Application_Loader.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\Application_Loader.exe" SelfReg="false"/>
+    <ROW File="Microsoft.Vbe.Interop.dll_2" Component_="Microsoft.Vbe.Interop.dll_2" FileName="Micros~2.dll|Microsoft.Vbe.Interop.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\Microsoft.Vbe.Interop.dll" SelfReg="false"/>
+    <ROW File="OnlinePDFGenerator.psd_1" Component_="Banner_Image.jpg_1" FileName="Online~1.psd|OnlinePDFGenerator.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\OnlinePDFGenerator.psd" SelfReg="false"/>
+    <ROW File="Testing_this_Application_out.docx_1" Component_="Testing_this_Application_out.docx_1" FileName="Testin~1.doc|Testing_this_Application_out.docx" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\Input\_vti_cnf\Testing_this_Application_out.docx" SelfReg="false"/>
+    <ROW File="dot.gif" Component_="Banner_Image.jpg" FileName="dot.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\dot.gif" SelfReg="false"/>
+    <ROW File="za.exe" Component_="za.exe" FileName="7za.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\7za.exe" SelfReg="false"/>
+    <ROW File="Application_Loader.exe_3" Component_="Application_Loader.exe_3" FileName="Applic~1.exe|Application_Loader.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\Application_Loader.exe" SelfReg="false"/>
+    <ROW File="AutoUpdate.exe" Component_="AutoUpdate.exe" FileName="AutoUp~1.exe|AutoUpdate.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\AutoUpdate.exe" SelfReg="false"/>
+    <ROW File="Microsoft.Vbe.Interop.dll_3" Component_="Microsoft.Vbe.Interop.dll_3" FileName="Micros~2.dll|Microsoft.Vbe.Interop.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\Microsoft.Vbe.Interop.dll" SelfReg="false"/>
+    <ROW File="Splash_Image.jpg_1" Component_="Inputs.txt_1" FileName="Splash~1.jpg|Splash_Image.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\Inputs\Splash_Image.jpg" SelfReg="false"/>
+    <ROW File="StudentLife.psd_1" Component_="Banner_Image.jpg_1" FileName="Studen~1.psd|StudentLife.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\StudentLife.psd" SelfReg="false"/>
+    <ROW File="Testing_this_Application_out.docx_2" Component_="Testing_this_Application_out.docx_2" FileName="Testin~1.doc|Testing_this_Application_out.docx" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\Output\Testing_this_Application_out.docx" SelfReg="false"/>
+    <ROW File="Application_Loader.exe_4" Component_="Application_Loader.exe_4" FileName="Applic~1.exe|Application_Loader.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\Application_Loader.exe" SelfReg="false"/>
+    <ROW File="Banner_Image.psd" Component_="Banner_Image.jpg" FileName="Banner~1.psd|Banner_Image.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\Banner_Image.psd" SelfReg="false"/>
+    <ROW File="MyHandin.psd" Component_="Banner_Image.jpg" FileName="MyHandin.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyHandin.psd" SelfReg="false"/>
+    <ROW File="MyPortal.psd" Component_="Banner_Image.jpg" FileName="MyPortal.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyPortal.psd" SelfReg="false"/>
+    <ROW File="Splash_Image.jpg_2" Component_="Inputs.txt_2" FileName="Splash~1.jpg|Splash_Image.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\Inputs\Splash_Image.jpg" SelfReg="false"/>
+    <ROW File="Testing_this_Application_out.docx_3" Component_="Testing_this_Application_out.docx_3" FileName="Testin~1.doc|Testing_this_Application_out.docx" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\Output\_vti_cnf\Testing_this_Application_out.docx" SelfReg="false"/>
+    <ROW File="Microsoft.Office.Interop.PowerPoint.dll" Component_="Microsoft.Office.Interop.PowerPoint.dll" FileName="Micros~1.dll|Microsoft.Office.Interop.PowerPoint.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\Microsoft.Office.Interop.PowerPoint.dll" SelfReg="false"/>
+    <ROW File="MyFiles.psd" Component_="Banner_Image.jpg" FileName="MyFiles.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyFiles.psd" SelfReg="false"/>
+    <ROW File="MyServices.gif" Component_="Banner_Image.jpg" FileName="MyServ~1.gif|MyServices.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyServices.gif" SelfReg="false"/>
+    <ROW File="MyTidbits.psd" Component_="Banner_Image.jpg" FileName="MyTidb~1.psd|MyTidbits.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyTidbits.psd" SelfReg="false"/>
+    <ROW File="Splash_Image.jpg_3" Component_="Inputs.txt_3" FileName="Splash~1.jpg|Splash_Image.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\Inputs\Splash_Image.jpg" SelfReg="false"/>
+    <ROW File="config.sav" Component_="config.aup" FileName="config.sav" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\config.sav" SelfReg="false"/>
+    <ROW File="index.php" Component_="index.php" FileName="index.php" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\index.php" SelfReg="false"/>
+    <ROW File="MyCourses.psd_1" Component_="Banner_Image.jpg_1" FileName="MyCour~1.psd|MyCourses.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyCourses.psd" SelfReg="false"/>
+    <ROW File="MyLogout.jpg" Component_="Banner_Image.jpg" FileName="MyLogout.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyLogout.jpg" SelfReg="false"/>
+    <ROW File="MyPortals.gif" Component_="Banner_Image.jpg" FileName="MyPort~1.gif|MyPortals.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyPortals.gif" SelfReg="false"/>
+    <ROW File="MyServices.psd_1" Component_="Banner_Image.jpg_1" FileName="MyServ~1.psd|MyServices.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyServices.psd" SelfReg="false"/>
+    <ROW File="PDF_Generator_PPT2PDF.exe" Component_="PDF_Generator_PPT2PDF.exe" FileName="PDFGen~1.exe|PDF Generator PPT2PDF.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\PDF Generator PPT2PDF.exe" SelfReg="false"/>
+    <ROW File="Splash_Image.jpg_4" Component_="Inputs.txt_4" FileName="Splash~1.jpg|Splash_Image.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\Inputs\Splash_Image.jpg" SelfReg="false"/>
+    <ROW File="MyPortals.psd_1" Component_="Banner_Image.jpg_1" FileName="MyPort~1.psd|MyPortals.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyPortals.psd" SelfReg="false"/>
+    <ROW File="PDFGenerator.jpg" Component_="Banner_Image.jpg" FileName="PDFGen~1.jpg|PDFGenerator.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\PDFGenerator.jpg" SelfReg="false"/>
+    <ROW File="PDF_Generator.exe" Component_="PDF_Generator.exe" FileName="PDFGen~1.exe|PDF Generator.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator.exe" SelfReg="false"/>
+    <ROW File="postform.php" Component_="index.php" FileName="postform.php" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\postform.php" SelfReg="false"/>
+    <ROW File="Inputs.txt" Component_="Inputs.txt" FileName="Inputs.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Inputs\Inputs.txt" SelfReg="false"/>
+    <ROW File="Interop.ACRODISTXLib.dll_1" Component_="Interop.ACRODISTXLib.dll_1" FileName="Intero~1.dll|Interop.ACRODISTXLib.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\Interop.ACRODISTXLib.dll" SelfReg="false"/>
+    <ROW File="Monitoring_Still.gif" Component_="Monitoring_Animation.gif" FileName="Monito~2.gif|Monitoring-Still.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Images\Monitoring-Still.gif" SelfReg="false"/>
+    <ROW File="MyForms.gif" Component_="Banner_Image.jpg" FileName="MyForms.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyForms.gif" SelfReg="false"/>
+    <ROW File="PDF_Generator_DOC2PDF.exe" Component_="PDF_Generator_DOC2PDF.exe" FileName="PDFGen~1.exe|PDF Generator DOC2PDF.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\PDF Generator DOC2PDF.exe" SelfReg="false"/>
+    <ROW File="DeleteFile.jpg_1" Component_="Banner_Image.jpg_1" FileName="Delete~1.jpg|DeleteFile.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\DeleteFile.jpg" SelfReg="false"/>
+    <ROW File="Description.txt" Component_="config.aup" FileName="Descri~1.txt|Description.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Description.txt" SelfReg="false"/>
+    <ROW File="Interop.ACRODISTXLib.dll_2" Component_="Interop.ACRODISTXLib.dll_2" FileName="Intero~1.dll|Interop.ACRODISTXLib.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\Interop.ACRODISTXLib.dll" SelfReg="false"/>
+    <ROW File="MyCalendars.jpg_1" Component_="Banner_Image.jpg_1" FileName="MyCale~1.jpg|MyCalendars.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyCalendars.jpg" SelfReg="false"/>
+    <ROW File="MyEmail.gif" Component_="Banner_Image.jpg" FileName="MyEmail.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyEmail.gif" SelfReg="false"/>
+    <ROW File="MyForms.psd_1" Component_="Banner_Image.jpg_1" FileName="MyForms.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyForms.psd" SelfReg="false"/>
+    <ROW File="MyNews.jpg" Component_="Banner_Image.jpg" FileName="MyNews.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyNews.jpg" SelfReg="false"/>
+    <ROW File="MyUCTInfo.gif_1" Component_="Banner_Image.jpg_1" FileName="MyUCTI~1.gif|MyUCTInfo.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyUCTInfo.gif" SelfReg="false"/>
+    <ROW File="PDF_Generator_XLS2PDF.exe" Component_="PDF_Generator_XLS2PDF.exe" FileName="PDFGen~1.exe|PDF Generator XLS2PDF.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\PDF Generator XLS2PDF.exe" SelfReg="false"/>
+    <ROW File="Testing_this_Application_out.docx_Email_1" Component_="Testing_this_Application_out.docx_1" FileName="Testin~3.doc|Testing_this_Application_out.docx__Email__" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\Input\_vti_cnf\Testing_this_Application_out.docx__Email__" SelfReg="false"/>
+    <ROW File="Interop.ACRODISTXLib.dll_3" Component_="Interop.ACRODISTXLib.dll_3" FileName="Intero~1.dll|Interop.ACRODISTXLib.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\Interop.ACRODISTXLib.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Office.Interop.Word.dll" Component_="Microsoft.Office.Interop.Word.dll" FileName="Micros~1.dll|Microsoft.Office.Interop.Word.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\Microsoft.Office.Interop.Word.dll" SelfReg="false"/>
+    <ROW File="MyEmail.psd_1" Component_="Banner_Image.jpg_1" FileName="MyEmail.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyEmail.psd" SelfReg="false"/>
+    <ROW File="MyUCTInfo.psd" Component_="Banner_Image.jpg" FileName="MyUCTI~1.psd|MyUCTInfo.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyUCTInfo.psd" SelfReg="false"/>
+    <ROW File="Testing_this_Application_out.docx_Complete" Component_="Testing_this_Application_out.docx" FileName="Testin~2.doc|Testing_this_Application_out.docx__Complete__" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\Input\Testing_this_Application_out.docx__Complete__" SelfReg="false"/>
+    <ROW File="MyLogout.psd" Component_="Banner_Image.jpg" FileName="MyLogout.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyLogout.psd" SelfReg="false"/>
+    <ROW File="OnlinePDFGenerator.jpg" Component_="Banner_Image.jpg" FileName="Online~1.jpg|OnlinePDFGenerator.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\OnlinePDFGenerator.jpg" SelfReg="false"/>
+    <ROW File="Office.dll" Component_="Office.dll" FileName="Office.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\Office.dll" SelfReg="false"/>
+    <ROW File="PDFGenerator.psd" Component_="Banner_Image.jpg" FileName="PDFGen~1.psd|PDFGenerator.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\PDFGenerator.psd" SelfReg="false"/>
+    <ROW File="StudentLife.jpg" Component_="Banner_Image.jpg" FileName="Studen~1.jpg|StudentLife.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\StudentLife.jpg" SelfReg="false"/>
+    <ROW File="Banner_Image.jpg_1" Component_="Banner_Image.jpg_1" FileName="Banner~1.jpg|Banner_Image.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\Banner_Image.jpg" SelfReg="false"/>
+    <ROW File="Help.txt" Component_="config.aup" FileName="Help.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Help.txt" SelfReg="false"/>
+    <ROW File="MyCalendars.gif" Component_="Banner_Image.jpg" FileName="MyCale~1.gif|MyCalendars.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyCalendars.gif" SelfReg="false"/>
+    <ROW File="MyHandin.jpg_1" Component_="Banner_Image.jpg_1" FileName="MyHandin.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyHandin.jpg" SelfReg="false"/>
+    <ROW File="MyNews.gif_1" Component_="Banner_Image.jpg_1" FileName="MyNews.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyNews.gif" SelfReg="false"/>
+    <ROW File="MyPortal.jpg_1" Component_="Banner_Image.jpg_1" FileName="MyPortal.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyPortal.jpg" SelfReg="false"/>
+    <ROW File="DeleteFile.psd_1" Component_="Banner_Image.jpg_1" FileName="Delete~1.psd|DeleteFile.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\DeleteFile.psd" SelfReg="false"/>
+    <ROW File="MyCalendars.psd_1" Component_="Banner_Image.jpg_1" FileName="MyCale~1.psd|MyCalendars.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyCalendars.psd" SelfReg="false"/>
+    <ROW File="MyFiles.jpg_1" Component_="Banner_Image.jpg_1" FileName="MyFiles.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyFiles.jpg" SelfReg="false"/>
+    <ROW File="MyNews.psd" Component_="Banner_Image.jpg" FileName="MyNews.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyNews.psd" SelfReg="false"/>
+    <ROW File="MyTidbits.jpg_1" Component_="Banner_Image.jpg_1" FileName="MyTidb~1.jpg|MyTidbits.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyTidbits.jpg" SelfReg="false"/>
+    <ROW File="PDF_Generator_IMG2PDF.exe" Component_="PDF_Generator_IMG2PDF.exe" FileName="PDFGen~1.exe|PDF Generator IMG2PDF.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\PDF Generator IMG2PDF.exe" SelfReg="false"/>
+    <ROW File="MyCourses.jpg" Component_="Banner_Image.jpg" FileName="MyCour~1.jpg|MyCourses.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyCourses.jpg" SelfReg="false"/>
+    <ROW File="Application_Loader.exe" Component_="Application_Loader.exe" FileName="Applic~1.exe|Application_Loader.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Application_Loader.exe" SelfReg="false"/>
+    <ROW File="Microsoft.Vbe.Interop.dll" Component_="Microsoft.Vbe.Interop.dll" FileName="Micros~2.dll|Microsoft.Vbe.Interop.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\Microsoft.Vbe.Interop.dll" SelfReg="false"/>
+    <ROW File="config.aup_1" Component_="config.aup_1" FileName="config.aup" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\config.aup" SelfReg="false"/>
+    <ROW File="OnlinePDFGenerator.psd" Component_="Banner_Image.jpg" FileName="Online~1.psd|OnlinePDFGenerator.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\OnlinePDFGenerator.psd" SelfReg="false"/>
+    <ROW File="SaveAsPDFandXPS.exe" Component_="SaveAsPDFandXPS.exe" FileName="SaveAs~1.exe|SaveAsPDFandXPS.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Installers\SaveAsPDFandXPS.exe" SelfReg="false"/>
+    <ROW File="Testing_this_Application_out.docx" Component_="Testing_this_Application_out.docx" FileName="Testin~1.doc|Testing_this_Application_out.docx" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\Input\Testing_this_Application_out.docx" SelfReg="false"/>
+    <ROW File="config.aup_2" Component_="config.aup_2" FileName="config.aup" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\config.aup" SelfReg="false"/>
+    <ROW File="dot.gif_1" Component_="Banner_Image.jpg_1" FileName="dot.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\dot.gif" SelfReg="false"/>
+    <ROW File="za.exe_1" Component_="za.exe_1" FileName="7za.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\7za.exe" SelfReg="false"/>
+    <ROW File="AutoUpdate.exe_1" Component_="AutoUpdate.exe_1" FileName="AutoUp~1.exe|AutoUpdate.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\AutoUpdate.exe" SelfReg="false"/>
+    <ROW File="Monitoring_Animation.htm" Component_="Monitoring_Animation.gif" FileName="Monito~1.htm|Monitoring-Animation.htm" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Images\Monitoring-Animation.htm" SelfReg="false"/>
+    <ROW File="Splash_Image.jpg" Component_="Inputs.txt" FileName="Splash~1.jpg|Splash_Image.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Inputs\Splash_Image.jpg" SelfReg="false"/>
+    <ROW File="StudentLife.psd" Component_="Banner_Image.jpg" FileName="Studen~1.psd|StudentLife.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\StudentLife.psd" SelfReg="false"/>
+    <ROW File="config.aup_3" Component_="config.aup_3" FileName="config.aup" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\config.aup" SelfReg="false"/>
+    <ROW File="za.exe_2" Component_="za.exe_2" FileName="7za.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\7za.exe" SelfReg="false"/>
+    <ROW File="AutoUpdate.exe_2" Component_="AutoUpdate.exe_2" FileName="AutoUp~1.exe|AutoUpdate.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\AutoUpdate.exe" SelfReg="false"/>
+    <ROW File="Banner_Image.psd_1" Component_="Banner_Image.jpg_1" FileName="Banner~1.psd|Banner_Image.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\Banner_Image.psd" SelfReg="false"/>
+    <ROW File="MyHandin.psd_1" Component_="Banner_Image.jpg_1" FileName="MyHandin.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyHandin.psd" SelfReg="false"/>
+    <ROW File="MyPortal.psd_1" Component_="Banner_Image.jpg_1" FileName="MyPortal.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyPortal.psd" SelfReg="false"/>
+    <ROW File="config.aup_4" Component_="config.aup_4" FileName="config.aup" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\config.aup" SelfReg="false"/>
+    <ROW File="za.exe_3" Component_="za.exe_3" FileName="7za.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\7za.exe" SelfReg="false"/>
+    <ROW File="AutoUpdate.exe_3" Component_="AutoUpdate.exe_3" FileName="AutoUp~1.exe|AutoUpdate.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\AutoUpdate.exe" SelfReg="false"/>
+    <ROW File="MyFiles.psd_1" Component_="Banner_Image.jpg_1" FileName="MyFiles.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyFiles.psd" SelfReg="false"/>
+    <ROW File="MyServices.gif_1" Component_="Banner_Image.jpg_1" FileName="MyServ~1.gif|MyServices.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyServices.gif" SelfReg="false"/>
+    <ROW File="MyTidbits.psd_1" Component_="Banner_Image.jpg_1" FileName="MyTidb~1.psd|MyTidbits.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyTidbits.psd" SelfReg="false"/>
+    <ROW File="config.sav_1" Component_="config.aup_1" FileName="config.sav" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\config.sav" SelfReg="false"/>
+    <ROW File="index.php_1" Component_="index.php_1" FileName="index.php" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\_vti_cnf\index.php" SelfReg="false"/>
+    <ROW File="za.exe_4" Component_="za.exe_4" FileName="7za.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\7za.exe" SelfReg="false"/>
+    <ROW File="AutoUpdate.exe_4" Component_="AutoUpdate.exe_4" FileName="AutoUp~1.exe|AutoUpdate.exe" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\AutoUpdate.exe" SelfReg="false"/>
+    <ROW File="MyCourses.psd" Component_="Banner_Image.jpg" FileName="MyCour~1.psd|MyCourses.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyCourses.psd" SelfReg="false"/>
+    <ROW File="MyLogout.jpg_1" Component_="Banner_Image.jpg_1" FileName="MyLogout.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyLogout.jpg" SelfReg="false"/>
+    <ROW File="MyPortals.gif_1" Component_="Banner_Image.jpg_1" FileName="MyPort~1.gif|MyPortals.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyPortals.gif" SelfReg="false"/>
+    <ROW File="MyServices.psd" Component_="Banner_Image.jpg" FileName="MyServ~1.psd|MyServices.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyServices.psd" SelfReg="false"/>
+    <ROW File="config.sav_2" Component_="config.aup_2" FileName="config.sav" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\config.sav" SelfReg="false"/>
+    <ROW File="PDFGenerator.jpg_1" Component_="Banner_Image.jpg_1" FileName="PDFGen~1.jpg|PDFGenerator.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\PDFGenerator.jpg" SelfReg="false"/>
+    <ROW File="Inputs.txt_1" Component_="Inputs.txt_1" FileName="Inputs.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator DOC2PDF\Inputs\Inputs.txt" SelfReg="false"/>
+    <ROW File="MyForms.gif_1" Component_="Banner_Image.jpg_1" FileName="MyForms.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyForms.gif" SelfReg="false"/>
+    <ROW File="Inputs.txt_2" Component_="Inputs.txt_2" FileName="Inputs.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\Inputs\Inputs.txt" SelfReg="false"/>
+    <ROW File="MyCalendars.jpg" Component_="Banner_Image.jpg" FileName="MyCale~1.jpg|MyCalendars.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyCalendars.jpg" SelfReg="false"/>
+    <ROW File="MyUCTInfo.gif" Component_="Banner_Image.jpg" FileName="MyUCTI~1.gif|MyUCTInfo.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyUCTInfo.gif" SelfReg="false"/>
+    <ROW File="Testing_this_Application_out.docx_Email" Component_="Testing_this_Application_out.docx" FileName="Testin~3.doc|Testing_this_Application_out.docx__Email__" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\Input\Testing_this_Application_out.docx__Email__" SelfReg="false"/>
+    <ROW File="Inputs.txt_3" Component_="Inputs.txt_3" FileName="Inputs.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\Inputs\Inputs.txt" SelfReg="false"/>
+    <ROW File="Microsoft.Office.Interop.Word.dll_1" Component_="Microsoft.Office.Interop.Word.dll_1" FileName="Micros~1.dll|Microsoft.Office.Interop.Word.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\Microsoft.Office.Interop.Word.dll" SelfReg="false"/>
+    <ROW File="MyEmail.psd" Component_="Banner_Image.jpg" FileName="MyEmail.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyEmail.psd" SelfReg="false"/>
+    <ROW File="MyUCTInfo.psd_1" Component_="Banner_Image.jpg_1" FileName="MyUCTI~1.psd|MyUCTInfo.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyUCTInfo.psd" SelfReg="false"/>
+    <ROW File="Testing_this_Application_out.docx_Complete_1" Component_="Testing_this_Application_out.docx_1" FileName="Testin~2.doc|Testing_this_Application_out.docx__Complete__" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\Input\_vti_cnf\Testing_this_Application_out.docx__Complete__" SelfReg="false"/>
+    <ROW File="Inputs.txt_4" Component_="Inputs.txt_4" FileName="Inputs.txt" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\Inputs\Inputs.txt" SelfReg="false"/>
+    <ROW File="MyLogout.psd_1" Component_="Banner_Image.jpg_1" FileName="MyLogout.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyLogout.psd" SelfReg="false"/>
+    <ROW File="OnlinePDFGenerator.jpg_1" Component_="Banner_Image.jpg_1" FileName="Online~1.jpg|OnlinePDFGenerator.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\OnlinePDFGenerator.jpg" SelfReg="false"/>
+    <ROW File="Office.dll_1" Component_="Office.dll_1" FileName="Office.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator PPT2PDF\Office.dll" SelfReg="false"/>
+    <ROW File="MyCalendars.gif_1" Component_="Banner_Image.jpg_1" FileName="MyCale~1.gif|MyCalendars.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyCalendars.gif" SelfReg="false"/>
+    <ROW File="MyNews.gif" Component_="Banner_Image.jpg" FileName="MyNews.gif" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyNews.gif" SelfReg="false"/>
+    <ROW File="MyPortal.jpg" Component_="Banner_Image.jpg" FileName="MyPortal.jpg" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\MyPortal.jpg" SelfReg="false"/>
+    <ROW File="Office.dll_2" Component_="Office.dll_2" FileName="Office.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\Office.dll" SelfReg="false"/>
+    <ROW File="DeleteFile.psd" Component_="Banner_Image.jpg" FileName="Delete~1.psd|DeleteFile.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\DeleteFile.psd" SelfReg="false"/>
+    <ROW File="Microsoft.Office.Interop.Excel.dll" Component_="Microsoft.Office.Interop.Excel.dll" FileName="Micros~1.dll|Microsoft.Office.Interop.Excel.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator XLS2PDF\Microsoft.Office.Interop.Excel.dll" SelfReg="false"/>
+    <ROW File="MyNews.psd_1" Component_="Banner_Image.jpg_1" FileName="MyNews.psd" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\Website\PDF Generator\images\_vti_cnf\MyNews.psd" SelfReg="false"/>
+    <ROW File="Office.dll_3" Component_="Office.dll_3" FileName="Office.dll" Version="" Language="" Attributes="" SourcePath="..\PDF Generator\Required Files\PDF Generator IMG2PDF\Office.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Source="" Target="A higher version of [ProductName] is installed."/>
+    <ROW Action="AI_ViewReadme" Type="194" Source="viewer.exe" Target="[#Description.txt]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="AI_LaunchApp" Type="194" Source="viewer.exe" Target="[#Application_Loader.exe]"/>
+    <ROW Action="SET_TARGETDIR" Type="307" Source="TARGETDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="UpgradeCode" VersionMin="" VersionMax="ProductVersion" Language="" Attributes="1025" Remove=""/>
+    <ROW UpgradeCode="UpgradeCode" VersionMin="ProductVersion" VersionMax="" Language="" Attributes="2" Remove=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMergeModsComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="PDF_Generator" Directory_="SHORTCUTDIR" Name="PDFGen~1|PDF Generator" Component_="PDF_Generator.exe" Target="[TARGETDIR]Application_Loader.exe" Arguments="" Description="PDF Generator" Hotkey="0" Icon_="controlPanelIcon.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+    <ROW Shortcut="PDF_Generator_AutoUpdate" Directory_="SHORTCUTDIR" Name="PDFGen~2|PDF Generator AutoUpdate" Component_="PDF_Generator.exe" Target="[TARGETDIR]AutoUpdate.exe" Arguments="force" Description="AutoUpdate" Hotkey="0" Icon_="TARGETDIR_AutoUpdate.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+    <ROW Shortcut="PDF_Generator_Uninstall" Directory_="SHORTCUTDIR" Name="PDFGen~3|PDF Generator Uninstall" Component_="PDF_Generator.exe" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Description="" Hotkey="0" Icon_="SystemFolder_msiexec.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="SystemFolder_msiexec.exe" SourcePath="&lt;uninstall.ico&gt;" Index="0"/>
+    <ROW Name="TARGETDIR_AutoUpdate.exe" SourcePath="Images\AutoUpdate.ico" Index="0"/>
+    <ROW Name="controlPanelIcon.exe" SourcePath="Images\Application_Icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="installer_background.jpg" SourcePath="Images\installer_background.jpg"/>
+    <ROW Name="installer_background_dialog.jpg" SourcePath="Images\installer_background_dialog.jpg"/>
+    <ROW Name="viewer.exe" SourcePath="&lt;viewer.exe&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ATTRIBUTE name="Start" value="WelcomeDlg FolderDlg VerifyReadyDlg"/>
+    <ATTRIBUTE name="Progress" value="ProgressDlg"/>
+    <ATTRIBUTE name="End" value="ExitDialog"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMediaComponent">
+    <ATTRIBUTE name="InstallationType" value="1"/>
+    <ATTRIBUTE name="MediaSize" value="0"/>
+    <ATTRIBUTE name="Compress" value="1"/>
+    <ATTRIBUTE name="Package" value="10"/>
+    <ATTRIBUTE name="PackageName" value="Release\PDF Generator Installer"/>
+    <ATTRIBUTE name="IconPath" value="Images\Application_Icon.ico?0"/>
+  </COMPONENT>
+</DOCUMENT>

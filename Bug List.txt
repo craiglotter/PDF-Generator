@@ -1,0 +1,2 @@
+1. Grammar error in daily report email
+2. check loadsettings. if no config.sav, default values need to be added after file read operation

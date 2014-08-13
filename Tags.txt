@@ -1,0 +1,6 @@
+file manipulation
+text file manipulation
+threading
+processes
+FileSystemWatcher
+Email
